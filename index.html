@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главное меню</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Главное меню</h1>
+    <div class="balance">Баланс: <span id="balance">1000.00</span>₽</div>
+    <div class="buttons">
+      <button onclick="window.location.href='game1/index.html'">Мины</button>
+      <button onclick="window.location.href='game2/index.html'">Кейсы</button>
+      <button onclick="window.location.href='game3/index.html'">Ракетка</button>
+    </div>
+    <div class="dodep-container">
+      <button id="reset-balance">ДОДЕП</button>
+    </div>
+  </div>
+
+  <!-- Модальное окно для ДОДЕП -->
+  <div id="dodep-modal" class="modal">
+    <div class="modal-content">
+      <img src="https://memi.klev.club/uploads/posts/2024-05/memi-klev-club-dbus-p-memi-muzhik-kopaet-almazi-3.jpg" alt="ДОДЕП">
+    </div>
+  </div>
+
+  <!-- Модальное окно для "Додепать можно, если все проиграл" -->
+  <div id="dodep-warning-modal" class="modal">
+    <div class="modal-content">
+      <h2>Додепать можно, если все проиграл</h2>
+      <button id="close-dodep-warning-modal">Закрыть</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

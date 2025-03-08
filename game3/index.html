@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ракетка</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Подключение общего файла стилей -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 id="gameTitle">Ракетка</h1>
+    <div class="balance">Баланс: <span id="balance">1000.00</span>₽</div>
+    <div class="display">
+      <p>Коэффициент: <span id="multiplier">1.00x</span></p>
+      <p>Выигрыш: <span id="winAmount">0</span>₽</p>
+    </div>
+    <div class="rocket-container">
+      <div class="rocket" id="rocket">🚀</div>
+    </div>
+    <div class="controls">
+      <input type="number" id="betAmount" placeholder="Сумма ставки" min="1" value="100">
+      <button id="startButton" class="game-button">Старт</button>
+      <button id="cashOutButton" class="game-button" disabled>Забрать</button>
+    </div>
+    <p id="message"></p>
+    <button onclick="window.location.href='../index.html'" class="menu-button">В главное меню</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

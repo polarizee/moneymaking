@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейсы</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Подключение общего файла стилей -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 id="game-title">Кейсы</h1>
+    <div class="balance">Баланс: <span id="balance">1000.00</span>₽</div>
+    <div class="cases">
+      <div class="case" id="novice">
+        <h2>Новичок</h2>
+        <p>250 рублей</p>
+        <button onclick="buyCase('novice')">Купить</button>
+      </div>
+      <div class="case" id="player">
+        <h2>Игрок</h2>
+        <p>500 рублей</p>
+        <button onclick="buyCase('player')">Купить</button>
+      </div>
+      <div class="case" id="gambler">
+        <h2>Лудоман</h2>
+        <p>1000 рублей</p>
+        <button onclick="buyCase('gambler')">Купить</button>
+      </div>
+      <div class="case" id="legend">
+        <h2>Легенда</h2>
+        <p>5000 рублей</p>
+        <button onclick="buyCase('legend')">Купить</button>
+      </div>
+      <div class="case" id="credit">
+        <h2>Кредит</h2>
+        <p>10000 рублей</p>
+        <button onclick="buyCase('credit')">Купить</button>
+      </div>
+    </div>
+    <button onclick="window.location.href='../index.html'" class="menu-button">В главное меню</button>
+  </div>
+
+  <!-- Модальное окно для анимации кейса -->
+  <div id="case-modal" class="modal">
+    <div class="modal-content">
+      <h2 id="case-result">Открываем кейс...</h2>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <button id="close-case-modal" style="display: none;">Закрыть</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

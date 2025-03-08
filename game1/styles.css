@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a192f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #172a45;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.balance {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ccd6f6;
+}
+
+.bet-section {
+    margin-bottom: 20px;
+}
+
+.bet-section label {
+    font-size: 16px;
+    display: block;
+    margin: 10px 0 5px;
+    color: #8892b0;
+}
+
+.bet-section input, .bet-section select {
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #233554;
+    color: #ffffff;
+    border: 1px solid #1f4068;
+    border-radius: 5px;
+}
+
+.bet-section button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #1f4068;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.field {
+    width: 100%;
+    height: 60px;
+    background-color: #233554;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.field.revealed.lose {
+    background-color: #ff4d4d;
+}
+
+.field.revealed.win {
+    background-color: #4dff4d;
+}
+
+.result, .next-step {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ccd6f6;
+}
+
+#cash-out {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #1f4068;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#cash-out:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.menu-button {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #1f4068, #2ecc71);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.menu-button:hover {
+    background: linear-gradient(135deg, #2ecc71, #1f4068);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.menu-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Модальные окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #172a45;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #ff4d4d;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #1f4068;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}

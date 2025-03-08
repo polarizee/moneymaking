@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0a192f;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: #172a45;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 5px; /* Уменьшили отступ */
+}
+
+.balance {
+  font-size: 18px;
+  margin-bottom: 5px; /* Уменьшили отступ */
+  color: #ccd6f6;
+}
+
+.display {
+  margin-bottom: 5px; /* Уменьшили отступ */
+}
+
+.display p {
+  font-size: 1.2rem;
+  margin: 5px 0; /* Уменьшили отступ */
+}
+
+.rocket-container {
+  position: relative;
+  height: 100px; /* Уменьшили высоту контейнера */
+  margin-bottom: 5px; /* Уменьшили отступ */
+  overflow: hidden;
+}
+
+.rocket {
+  font-size: 4rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.1s linear;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #233554;
+  color: #ffffff;
+  border: 1px solid #1f4068;
+  width: 100px;
+}
+
+.game-button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background: linear-gradient(135deg, #1f4068, #2ecc71);
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.game-button:hover {
+  background: linear-gradient(135deg, #2ecc71, #1f4068);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.game-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.game-button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+#message {
+  font-size: 1.2rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.menu-button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #1f4068, #2ecc71);
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.menu-button:hover {
+  background: linear-gradient(135deg, #2ecc71, #1f4068);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.menu-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

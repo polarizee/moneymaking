@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мины</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="game-title">Мины</h1>
+        <div class="balance">Баланс: <span id="balance">1000.00</span>₽</div>
+        <div class="bet-section">
+            <label for="bet">Ваша ставка:</label>
+            <input type="number" id="bet" min="1" value="10">
+            <label for="losing-fields">Количество мин:</label>
+            <select id="losing-fields">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+            <button id="start-game">Начать игру</button>
+        </div>
+        <div class="grid">
+            <div class="field" data-index="0"></div>
+            <div class="field" data-index="1"></div>
+            <div class="field" data-index="2"></div>
+            <div class="field" data-index="3"></div>
+            <div class="field" data-index="4"></div>
+            <div class="field" data-index="5"></div>
+            <div class="field" data-index="6"></div>
+            <div class="field" data-index="7"></div>
+            <div class="field" data-index="8"></div>
+            <div class="field" data-index="9"></div>
+            <div class="field" data-index="10"></div>
+            <div class="field" data-index="11"></div>
+        </div>
+        <div class="result">
+            Текущий выигрыш: <span id="current-win">0.00</span>₽
+        </div>
+        <div class="next-step">
+            -> <span id="next-win">0.00</span>₽
+        </div>
+        <button id="cash-out" disabled>Забрать приз</button>
+        <button onclick="window.location.href='../index.html'" class="menu-button">В главное меню</button>
+    </div>
+
+    <!-- Модальное окно для проигрыша -->
+    <div id="lose-modal" class="modal">
+        <div class="modal-content">
+            <h2>Вы проиграли!</h2>
+            <button id="close-lose-modal">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
