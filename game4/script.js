@@ -65,6 +65,7 @@ const symbolValues = {
 // Обновление отображения баланса и стоимости бонуса
 function updateUI() {
   localStorage.setItem('balance', balance.toFixed(2));
+  bonusCostDisplay.textContent = bonusCost.toFixed(2);
   balanceDisplay.textContent = balance.toFixed(2);
   totalBonusWinsDisplay.textContent = totalBonusWins.toFixed(2);
   lastSpinWinDisplay.textContent = lastSpinWin.toFixed(2);
