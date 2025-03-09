@@ -27,13 +27,13 @@ let lastSpinWin = 0.00;
 
 // Символы для игры и их шансы
 const symbols = [
-  { symbol: '🍒', chance: 10 },
-  { symbol: '🍋', chance: 9 },
-  { symbol: '🍊', chance: 8 },
-  { symbol: '🍎', chance: 7 },
-  { symbol: '🍇', chance: 6 },
-  { symbol: '🍉', chance: 5 },
-  { symbol: '⭐', chance: 4 },
+  { symbol: '🍒', chance: 6.8 },
+  { symbol: '🍋', chance: 6.5 },
+  { symbol: '🍊', chance: 5.1 },
+  { symbol: '🍎', chance: 4.3 },
+  { symbol: '🍇', chance: 2.3 },
+  { symbol: '🍉', chance: 1.6 },
+  { symbol: '⭐', chance: 1 },
 ];
 
 // Бомбы и их шансы
@@ -44,12 +44,12 @@ const bombs = [
   { symbol: '10X', chance: 1 },
   { symbol: '15X', chance: 0.5 },
   { symbol: '20X', chance: 0.3 },
-  { symbol: '50X', chance: 0.2 },
-  { symbol: '100X', chance: 0.1 },
+  { symbol: '50X', chance: 0.1 },
+  { symbol: '100X', chance: 0.05 },
 ];
 
 const lollipopChance = 3; // Шанс выпадения 🍭 (3%)
-const bombChance = 10; // Шанс выпадения бомбы в бонуске (5%)
+const bombChance = 7; // Шанс выпадения бомбы в бонуске (5%)
 
 // Ценность символов
 const symbolValues = {
