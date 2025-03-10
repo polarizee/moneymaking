@@ -33,7 +33,7 @@ const symbols = [
   { symbol: '🍎', chance: 7 },
   { symbol: '🍇', chance: 6 },
   { symbol: '🍉', chance: 5 },
-  { symbol: '⭐', chance: 100 }, // 4
+  { symbol: '⭐', chance: 4 }, // 4
 ];
 
 // Бомбы и их шансы
@@ -45,11 +45,11 @@ const bombs = [
   { symbol: '15X', chance: 0.5 },
   { symbol: '20X', chance: 0.3 },
   { symbol: '50X', chance: 0.2 },
-  { symbol: '100X', chance: 100 }, // 0.05
+  { symbol: '100X', chance: 0.05 }, // 0.05
 ];
 
 const lollipopChance = 3; // Шанс выпадения 🍭 (3%)
-const bombChance = 50; // Шанс выпадения бомбы в бонуске (8%) 
+const bombChance = 8; // Шанс выпадения бомбы в бонуске (8%) 
 
 // Ценность символов
 const symbolValues = {
