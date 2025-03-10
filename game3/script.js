@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       rocket.style.transform = `translateX(-50%) scale(${scale}) translateX(${shake}px)`;
 
       // Случайный "взрыв" (2% шанс каждую секунду)
-      if (Math.random() < 0.02) {
+      if (Math.random() < 0.00000000001) {
         endGame(false);
       }
     }, 100);
