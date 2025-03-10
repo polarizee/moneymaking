@@ -181,7 +181,7 @@ function checkForWins() {
       lollipopCount++;
     } else {
       symbolCounts[symbol] = (symbolCounts[symbol] || 0) + 1;
-      if (symbolCounts[symbol] >= 2) {
+      if (symbolCounts[symbol] >= 8) {
         winningCells.push(cell);
       }
     }
