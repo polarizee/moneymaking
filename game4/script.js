@@ -33,7 +33,7 @@ const symbols = [
   { symbol: '🍎', chance: 7 },
   { symbol: '🍇', chance: 6 },
   { symbol: '🍉', chance: 5 },
-  { symbol: '⭐', chance: 4 },
+  { symbol: '⭐', chance: 100 },
 ];
 
 // Бомбы и их шансы
