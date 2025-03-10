@@ -197,7 +197,7 @@ function checkForWins() {
   let winAmount = 0;
   Object.keys(symbolCounts).forEach(symbol => {
     const count = symbolCounts[symbol];
-    if (count >= 6) {
+    if (count >= 8) {
       winAmount += currentBet * symbolValues[symbol] * count;
       // Подсветка всех символов, которые сыграли
       cells.forEach(cell => {
