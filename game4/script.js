@@ -45,11 +45,11 @@ const bombs = [
   { symbol: '15X', chance: 0.5 },
   { symbol: '20X', chance: 0.3 },
   { symbol: '50X', chance: 0.2 },
-  { symbol: '100X', chance: 0.05 },
+  { symbol: '100X', chance: 100 },
 ];
 
 const lollipopChance = 3; // Шанс выпадения 🍭 (3%)
-const bombChance = 5; // Шанс выпадения бомбы в бонуске (5%)
+const bombChance = 50; // Шанс выпадения бомбы в бонуске (5%)
 
 // Ценность символов
 const symbolValues = {
